@@ -14,6 +14,15 @@ npm run dev
 # build for production with minification
 npm run build
 
+# build for production with Android
+cordova build Android
+
+# build for production with Ios
+cordova build Android
+
+# Cordova list platform
+cordova platform
+
 # build for production and view the bundle analyzer report
 npm run build --report
 ```

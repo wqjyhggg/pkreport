@@ -3,13 +3,22 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import axios from 'axios'
+import i18n from './utils/i18n'
+import VueAxios from 'vue-axios'
+import ElementUI from 'element-ui'
+import 'element-ui/lib/theme-chalk/index.css'
 
 Vue.config.productionTip = false
+Vue.use(ElementUI)
+Vue.use(VueAxios, axios)
 
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
+  render: h => h(App),
   router,
+  i18n,
   components: { App },
   template: '<App/>'
 })
